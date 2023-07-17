@@ -13,8 +13,6 @@ docker run \
   --env PUID=`id -u` \
   --env PGID=`id -g` \
   --env DISPLAY="$DISPLAY" \
-  --volume "/tmp/.X11-unix:/tmp/.X11-unix:ro" \
-  --volume "$HOME/.Xauthority:/home/abc/.Xauthority:ro" \
   --ipc=host \
   --net=host \
   --shm-size=512m \
